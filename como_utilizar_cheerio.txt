@@ -1,0 +1,25 @@
+##carregando página
+    const $ = cheerio.load(paginaHTML)
+
+##transformando nosso HTML em um objeto
+    const dados = $('*')
+
+##como utilizar
+    ##para recuperar em HTML novamente
+    const dados = $('*').html() 
+
+    ##busca todos os textos do site
+    const dados = $('*').text()
+
+    ##scrapping
+    const dados = $('#produto').text()
+
+    ##busca de elementos
+    const dados = $('ul').text()
+    
+    ##busca de elementos
+    const dados = $('ul').attr('src')
+
+
+const $ = cheerio.load(paginaHTML)
+const dados = $('*')

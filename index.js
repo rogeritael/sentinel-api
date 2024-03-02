@@ -4,7 +4,7 @@ const ScrapController = require('./src/controllers/ScrapController')
 
 app.use(express.json())
 
-app.get('/', ScrapController.findGameByURL)
+app.get('/', ScrapController.findXboxPromotions)
 
 app.listen({
     host: '0.0.0.0',
