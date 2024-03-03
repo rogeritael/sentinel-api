@@ -29,13 +29,17 @@ class ScrapController {
                 let base_price = $(element).find('.card-body p span.text-line-through').text()
                 let current_price = $(element).find('.card-body p span.font-weight-semibold').text().replace('+','')
                 let page_url = $(element).find('.card-body h3 a').attr('href')
+                let developer = '---'
+                let platform = 'xbox'
 
                 const game = {
                     name,
                     image: image_url,
                     page_url,
                     base_price,
-                    current_price
+                    current_price,
+                    developer,
+                    platform
                 }
 
                 results = [...results, game]
